@@ -48,7 +48,6 @@ function App() {
       <input type="text" placeholder='name' value={name} onChange={(e)=> setName(e.target.value)} />
       <input type="number" placeholder='age' value={age} onChange={(e)=> setAge(e.target.value)} />
       <button onClick={addUser}>Add User</button>
-      {userLoading && <p>Loading...</p>}
       {
         users.map((user)=> {
           return(
